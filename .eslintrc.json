@@ -1,3 +1,31 @@
 {
-    "extends": "airbnb"
+  "extends": "airbnb",
+  "rules": {
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-color-literals": 2,
+    "react/no-did-mount-set-state": [0, ""],
+    "linebreak-style": 0,
+    "react/prefer-stateless-function": [
+      0,
+      {
+        "ignorePureComponents": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  },
+  "plugins": ["react", "react-native"],
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "globals": {
+    "fetch": false,
+    "headers": false
+  }
 }

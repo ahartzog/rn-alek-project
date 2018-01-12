@@ -3,6 +3,8 @@ package com.alekproject;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import fr.bamlab.rnimageresizer.ImageResizerPackage;
+import fr.bamlab.rnimageresizer.ImageResizerPackage;
 import com.rnfs.RNFSPackage;
 import com.imagepicker.ImagePickerPackage;
 import fr.bamlab.rnimageresizer.ImageResizerPackage;
@@ -25,10 +27,11 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new RNFSPackage(),
-            new ImagePickerPackage(),
-            new ImageResizerPackage()
+        new MainReactPackage(), 
+        new ImageResizerPackage(), 
+        new ImagePickerPackage(),
+        new RNFSPackage()
+
       );
     }
 
