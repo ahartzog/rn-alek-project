@@ -7,8 +7,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "eslint": "^4.15.0",
     "react": "16.2.0",
-    "react-native": "0.52.0"
+    "react-native": "0.52.0",
+    "react-native-image-resizer": "^1.0.0",
+    "react-native-photo-upload": "^1.1.1"
   },
   "devDependencies": {
     "babel-jest": "22.0.6",
